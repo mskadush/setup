@@ -1,0 +1,24 @@
+COMPANY=$2
+PROFILE=$3
+if [ "$COMPANY" == "lipa" ] ; then
+  case "$PROFILE" in
+    "developer-minenhle-dev-env")
+      source /Users/minenhlesithole/Desktop/Lipa/login/eks-dev-env-operator.sh
+    ;;
+    "operator-minenhle-dev-env")
+      source /Users/minenhlesithole/Desktop/Lipa/login/eks-dev-env-operator.sh
+    ;;
+    "*")
+      echo "Profile '$PROFILE' does not have credentials"
+    ;;
+  esac
+elif [ "$COMPANY" == "skadush" ]; then
+    case "$PROFILE" in
+      "minenhle")
+      source /Users/minenhlesithole/Desktop/skadush/login/minenhle.sh
+    ;;
+    "*")
+      echo "Profile '$PROFILE' does not have credentials"
+    ;;
+    esac
+fi

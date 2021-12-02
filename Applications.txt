@@ -1,0 +1,10 @@
+Postman
+Firefox
+Brave
+IntelliJ
+Spotify
+WhatsApp
+Docker (activate k8s as well)
+*Gather
+Slack
+VS Code
