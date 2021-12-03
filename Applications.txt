@@ -8,3 +8,4 @@ Docker (activate k8s as well)
 *Gather
 Slack
 VS Code
+Notion
