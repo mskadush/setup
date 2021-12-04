@@ -9,3 +9,4 @@ Docker (activate k8s as well)
 Slack
 VS Code
 Notion
+Discord
