@@ -10,3 +10,4 @@ Slack
 VS Code
 Notion
 Discord
+Fortnite
