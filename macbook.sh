@@ -18,7 +18,8 @@ curl -fsSL -o install.sh https://raw.githubusercontent.com/Homebrew/install/HEAD
 rm install.sh
 
 brew tap hashicorp/tap
-brew install jq yq helm awscli bash-completion hashicorp/tap/vault terraform
+brew tap snyk/tap
+brew install jq yq helm awscli bash-completion hashicorp/tap/vault terraform snyk
 
 cat > ~/.bash_aliases <<EOF
 alias identity=". identity \"$@\""
