@@ -19,7 +19,12 @@ rm install.sh
 
 brew tap hashicorp/tap
 brew tap snyk/tap
-brew install jq yq helm awscli bash-completion hashicorp/tap/vault terraform snyk
+brew install jq yq helm awscli bash-completion hashicorp/tap/vault hashicorp/tap/boundary terraform snyk
+# the --cask option install the gui version of all these apps. It's technically not necessary and the apps
+# could be installed w/o the cask option in the command above but I didn't wanna forget what casks are, so here we are
+# and also if there are ambiguous names it'll choose the cask (gui)
+brew install --cask postman visual-studio-code firefox brave-browser spotify intellij-idea-ce whatsapp docker slack \
+      notion discord gather
 
 cat > ~/.bash_aliases <<EOF
 alias identity=". identity \"$@\""
