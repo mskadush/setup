@@ -2,7 +2,7 @@
 # add the following options to login script
 #complete -W "now tomorrow never" identity
 
-_company_completions()
+completions()
 {
   if [ "$COMP_CWORD" == "1" ]; then
     # completion reply list
@@ -16,4 +16,4 @@ _company_completions()
   fi
 }
 
-complete -F _company_completions identity
+complete -F completions identity
