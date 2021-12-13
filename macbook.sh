@@ -19,12 +19,14 @@ rm install.sh
 
 brew tap hashicorp/tap
 brew tap snyk/tap
-brew install jq yq helm awscli bash-completion hashicorp/tap/vault hashicorp/tap/boundary terraform snyk
+brew install jq yq helm awscli bash-completion hashicorp/tap/vault hashicorp/tap/boundary terraform snyk nvm
 # the --cask option install the gui version of all these apps. It's technically not necessary and the apps
 # could be installed w/o the cask option in the command above but I didn't wanna forget what casks are, so here we are
 # and also if there are ambiguous names it'll choose the cask (gui)
 brew install --cask postman visual-studio-code firefox brave-browser spotify intellij-idea-ce whatsapp docker slack \
       notion discord gather
+
+nvm i node
 
 cat > ~/.bash_aliases <<EOF
 alias identity=". identity \"$@\""
@@ -43,6 +45,9 @@ source /Users/minenhlesithole/Desktop/skadush/setup/completion/identity.bash
 source /Users/minenhlesithole/Desktop/skadush/setup/completion/kubectl
 export PATH=$PATH:/Users/minenhlesithole/Desktop/skadush/setup/bin
 source <(kubectl completion bash)
+export NVM_DIR="$HOME/.nvm"
+[ -s "/usr/local/opt/nvm/nvm.sh" ] && \. "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 source ~/.bash_aliases
 EOF
 source ~/.bash_profile
