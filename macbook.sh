@@ -51,21 +51,3 @@ export NVM_DIR="$HOME/.nvm"
 source ~/.bash_aliases
 EOF
 source ~/.bash_profile
-
-cat > ~/.ssh/config <<EOF
-Host ssh.dev.azure.com
-  AddKeysToAgent yes
-  UseKeychain yes
-  IdentityFile ~/.ssh/lipapayments
-Host hosted-agents-vms
-  AddKeysToAgent yes
-  UseKeychain yes
-  IdentityFile ~/.ssh/hosted-agents-vms.pem
-  User ubuntu
-  HostName 10.3.11.216
-Host github.com
-  AddKeysToAgent yes
-  UseKeychain yes
-  IdentityFile ~/.ssh/skadush
-  HostName github.com
-EOF
