@@ -44,6 +44,7 @@ fi
 #try getting source $(pwd)/identity-completion.bash else move the scripts to an appropriate dir
 source /Users/minenhlesithole/Desktop/skadush/setup/completion/identity.bash
 source /Users/minenhlesithole/Desktop/skadush/setup/completion/kubectl
+# my own apps
 export PATH=$PATH:/Users/minenhlesithole/Desktop/skadush/setup/bin
 source <(kubectl completion bash)
 export NVM_DIR="$HOME/.nvm"

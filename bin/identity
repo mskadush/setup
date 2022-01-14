@@ -1,15 +1,15 @@
 COMPANY=$2
-PROFILE=$3
+ROLE=$3
 if [ "$COMPANY" == "lipa" ] ; then
-  case "$PROFILE" in
+  case "$ROLE" in
     "developer-minenhle-dev-env")
-      source /Users/minenhlesithole/Desktop/Lipa/login/eks-dev-env-operator.sh
+      source /Users/minenhlesithole/Desktop/Lipa/login/script.sh "$ROLE"
     ;;
-    "operator-minenhle-dev-env")
-      source /Users/minenhlesithole/Desktop/Lipa/login/eks-dev-env-operator.sh
+    "eks-dev-env-cluster-operator")
+      source /Users/minenhlesithole/Desktop/Lipa/login/script.sh "$ROLE"
     ;;
     "*")
-      echo "Profile '$PROFILE' does not have credentials"
+      echo "Role '$ROLE' is not yet configured"
     ;;
   esac
 elif [ "$COMPANY" == "skadush" ]; then
