@@ -1,17 +1,7 @@
 COMPANY=$2
 ROLE=$3
 if [ "$COMPANY" == "lipa" ] ; then
-  case "$ROLE" in
-    "developer-minenhle-dev-env")
-      source /Users/minenhlesithole/Desktop/Lipa/login/script.sh "$ROLE"
-    ;;
-    "eks-dev-env-cluster-operator")
-      source /Users/minenhlesithole/Desktop/Lipa/login/script.sh "$ROLE"
-    ;;
-    "*")
-      echo "Role '$ROLE' is not yet configured"
-    ;;
-  esac
+  source /Users/minenhlesithole/Desktop/Lipa/login/script.sh "$ROLE"
 elif [ "$COMPANY" == "skadush" ]; then
     case "$PROFILE" in
       "minenhle")
