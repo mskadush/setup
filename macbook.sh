@@ -36,21 +36,28 @@ EOF
 # we add the bash profile stuff after brew installing (bash-completion)
 kubectl completion bash >/etc/bash_completion.d/kubectl
 cat > ~/.bash_profile <<EOF
-# ssh auto-completion (and others?)
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
   . $(brew --prefix)/etc/bash_completion
 fi
-# custom bash-completion
-#try getting source $(pwd)/identity-completion.bash else move the scripts to an appropriate dir
 source /Users/minenhlesithole/Desktop/skadush/setup/completion/identity.bash
 source /Users/minenhlesithole/Desktop/skadush/setup/completion/kubectl
-# my own apps
 export PATH=$PATH:/Users/minenhlesithole/Desktop/skadush/setup/bin
 source <(kubectl completion bash)
 export NVM_DIR="$HOME/.nvm"
 [ -s "/usr/local/opt/nvm/nvm.sh" ] && \. "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
 [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 source ~/.bash_aliases
+export YVM_DIR=/usr/local/opt/yvm
+[ -r $YVM_DIR/yvm.sh ] && . $YVM_DIR/yvm.sh
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home
+export GEM_HOME=$HOME/.gem
+export PATH=$GEM_HOME/bin:$PATH
+export CHROME_EXECUTABLE="/Applications/Brave Browser.app/Contents/MacOS/Brave Browser"
 export KUBE_EDITOR="code -w"
 EOF
 source ~/.bash_profile
