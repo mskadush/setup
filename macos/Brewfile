@@ -1,0 +1,262 @@
+tap "adoptopenjdk/openjdk"
+tap "dart-lang/dart"
+tap "datawire/blackbird"
+tap "elastic/tap"
+tap "gromgit/fuse"
+tap "hashicorp/tap"
+tap "heroku/brew"
+tap "homebrew/bundle"
+tap "leoafarias/fvm"
+tap "snyk/tap"
+tap "tophat/bar"
+tap "warrensbox/tap"
+# TIFF library and utilities
+brew "libtiff"
+# Color management engine supporting ICC profiles
+brew "little-cms2"
+# Image format providing lossless and lossy compression for web images
+brew "webp"
+# New file format for still image compression
+brew "jpeg-xl"
+# Codec library for encoding and decoding AV1 video streams
+brew "aom"
+# Development kit for the Java programming language
+brew "openjdk"
+# Tool for reverse engineering 3rd party, closed, binary Android apps
+brew "apktool"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.11"
+# Official Amazon AWS command-line interface
+brew "awscli"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.10"
+# Microsoft Azure CLI 2.0
+brew "azure-cli"
+# Bourne-Again SHell, a UNIX command interpreter
+brew "bash"
+# Programmable completion for Bash 3.2
+brew "bash-completion"
+# Platform built on V8 to build network applications
+brew "node"
+# Tool to build, change, and version infrastructure
+brew "terraform"
+# Cloud Development Kit for Terraform
+brew "cdktf"
+# Pack, ship and run any application as a lightweight container
+brew "docker"
+# Simple command-line tool for creating clusters on Amazon EKS
+brew "eksctl"
+# Validating, recursive, caching DNS resolver
+brew "unbound"
+# GNU Transport Layer Security (TLS) Library
+brew "gnutls"
+# Library for JPEG-2000 image manipulation
+brew "openjpeg"
+# Image processing and image analysis library
+brew "leptonica"
+# Multi-format archive and compression library
+brew "libarchive"
+# Subtitle renderer for the ASS/SSA subtitle format
+brew "libass"
+# Framework for layout and rendering of i18n text
+brew "pango"
+# OCR (Optical Character Recognition) engine
+brew "tesseract"
+# Play, record, convert, and stream audio and video
+brew "ffmpeg"
+# Graphics library to dynamically manipulate images
+brew "gd"
+# Toolkit for image loading and pixel buffer manipulation
+brew "gdk-pixbuf"
+# GitHub command-line tool
+brew "gh"
+# GNU Pretty Good Privacy (PGP) package
+brew "gnupg", link: false
+# Open-source build automation tool based on the Groovy and Kotlin DSL
+brew "gradle"
+# Bash and Zsh completion for Gradle
+brew "gradle-completion"
+# Development kit for the Java programming language
+brew "openjdk@17"
+# Open-source build automation tool based on the Groovy and Kotlin DSL
+brew "gradle@7"
+# Image manipulation
+brew "netpbm"
+# Library to render SVG files using Cairo
+brew "librsvg"
+# Graph visualization software from AT&T and Bell Labs
+brew "graphviz"
+# Kubernetes package manager
+brew "helm"
+# Dex to Java decompiler
+brew "jadx"
+# Manage your Java environment
+brew "jenv"
+# Lightweight and flexible command-line JSON processor
+brew "jq"
+# Centralized server for distributed coordination of services
+brew "zookeeper"
+# Open-source distributed event streaming platform
+brew "kafka"
+# Environment diagnostics for Kotlin Multiplatform Mobile app development
+brew "kdoctor"
+# Kubernetes command-line interface
+brew "kubernetes-cli"
+# Cross platform, open source .NET development framework
+brew "mono"
+# Utility for managing network connections
+brew "netcat"
+# Manage multiple Node.js versions
+brew "nvm"
+# Generate clients, server & docs from an OpenAPI spec (v2, v3)
+brew "openapi-generator"
+# Cloud native development platform
+brew "pulumi"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.9"
+# Standard unix software packaging tool
+brew "rpm"
+# Powerful, clean, object-oriented scripting language
+brew "ruby"
+# Display and control your Android device
+brew "scrcpy"
+# Build applications with serverless architectures
+brew "serverless"
+# Crypto and x509 Swiss-Army-Knife
+brew "step"
+# Generate clients, server stubs, and docs from an OpenAPI spec
+brew "swagger-codegen"
+# Traceroute implementation using TCP packets
+brew "tcptraceroute"
+# User interface to the TELNET protocol
+brew "telnet"
+# Terminal multiplexer
+brew "tmux"
+# Display directories as trees (with optional color/HTML output)
+brew "tree"
+# Pager/text based browser
+brew "w3m"
+# Process YAML, JSON, XML, CSV and properties documents from the CLI
+brew "yq"
+# Local dev environment attached to a remote Kubernetes cluster
+brew "datawire/blackbird/telepresence"
+# Boundary
+brew "hashicorp/tap/boundary"
+# Consul
+brew "hashicorp/tap/consul"
+# Vault
+brew "hashicorp/tap/vault"
+# Find & fix known vulnerabilities in open-source dependencies
+brew "snyk/tap/snyk"
+# Manage multiple versions of Yarn
+brew "tophat/bar/yvm"
+# Automatic tiling window manager similar to xmonad
+cask "amethyst"
+# Command-line tools for building and debugging Android apps
+cask "android-commandlinetools"
+# Transfer files from and to an Android smartphone
+cask "android-file-transfer"
+# Productivity platform for tasks, docs, goals, and chat
+cask "clickup"
+# Hybrid IDE and text editor
+cask "fleet"
+# Personal blockchain for Ethereum development
+cask "ganache"
+# Virtual video-calling space
+cask "gather"
+# Desktop client for GitHub repositories
+cask "github"
+# Git client focusing on productivity
+cask "gitkraken"
+cask "hashicorp-boundary-desktop"
+# Standalone Java Decompiler GUI
+cask "jd-gui"
+# Remote development gateway by Jetbrains
+cask "jetbrains-gateway"
+# Screen and video recording software
+cask "loom"
+# Interactive tool for analyzing MongoDB data
+cask "mongodb-compass"
+# Reverse proxy, secure introspectable tunnels to localhost
+cask "ngrok"
+# App to write, plan, collaborate, and get organised
+cask "notion"
+# GUI for managing and using Apache Kafka clusters
+cask "offset-explorer"
+# Collaboration platform for API development
+cask "postman"
+# Tool to reverse the direction of scrolling
+cask "scroll-reverser"
+# Team communication and collaboration software
+cask "slite"
+# Open-source code editor
+cask "visual-studio-code"
+# Binary releases of VS Code without MS branding/telemetry/licensing
+cask "vscodium"
+# Mirror and control your phone
+cask "vysor"
+# Video communication and virtual meeting platform
+cask "zoom"
+vscode "abhiagr.logcat"
+vscode "cschlosser.doxdocgen"
+vscode "dgenzer.suricata-highlight-vscode"
+vscode "dsznajder.es7-react-js-snippets"
+vscode "eamodio.gitlens"
+vscode "esbenp.prettier-vscode"
+vscode "fbaligand.vscode-logstash-editor"
+vscode "fenkinet.swiftui"
+vscode "figma.figma-vscode-extension"
+vscode "fwcd.kotlin"
+vscode "gamunu.vscode-yarn"
+vscode "github.codespaces"
+vscode "gitkraken.gitkraken-authentication"
+vscode "hashicorp.terraform"
+vscode "humao.rest-client"
+vscode "ilevine.squash"
+vscode "jebbs.plantuml"
+vscode "jundat95.react-native-snippet"
+vscode "k--kato.intellij-idea-keybindings"
+vscode "mechatroner.rainbow-csv"
+vscode "mikestead.dotenv"
+vscode "mongodb.mongodb-vscode"
+vscode "ms-azure-devops.azure-pipelines"
+vscode "ms-azuretools.vscode-azureresourcegroups"
+vscode "ms-azuretools.vscode-docker"
+vscode "ms-kubernetes-tools.vscode-kubernetes-tools"
+vscode "ms-python.debugpy"
+vscode "ms-python.isort"
+vscode "ms-python.python"
+vscode "ms-python.vscode-pylance"
+vscode "ms-toolsai.jupyter"
+vscode "ms-toolsai.jupyter-keymap"
+vscode "ms-toolsai.jupyter-renderers"
+vscode "ms-toolsai.vscode-jupyter-cell-tags"
+vscode "ms-toolsai.vscode-jupyter-slideshow"
+vscode "ms-vscode-remote.remote-containers"
+vscode "ms-vscode-remote.remote-ssh"
+vscode "ms-vscode-remote.remote-ssh-edit"
+vscode "ms-vscode-remote.remote-wsl"
+vscode "ms-vscode-remote.vscode-remote-extensionpack"
+vscode "ms-vscode.azure-account"
+vscode "ms-vscode.remote-explorer"
+vscode "ms-vscode.remote-server"
+vscode "msjsdiag.vscode-react-native"
+vscode "naco-siren.gradle-language"
+vscode "octref.vetur"
+vscode "pkief.material-icon-theme"
+vscode "postman.postman-for-vscode"
+vscode "randomchance.logstash"
+vscode "redhat.java"
+vscode "redhat.vscode-xml"
+vscode "redhat.vscode-yaml"
+vscode "ritwickdey.liveserver"
+vscode "sonarsource.sonarlint-vscode"
+vscode "sswg.swift-lang"
+vscode "stamusnetworks.suricata-ls"
+vscode "vadimcn.vscode-lldb"
+vscode "vmware.vscode-spring-boot"
+vscode "vscjava.vscode-gradle"
+vscode "vscode-logstash.vscode-logstash"
+vscode "vue.volar"
+vscode "wakatime.vscode-wakatime"
+vscode "znck.vue"
